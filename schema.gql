@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Date custom scalar type"""
+scalar DateTime
+
+type Query {
+  getAllNationalities: [String!]!
+  getFilteredUsers(contains: String = "", startDate: DateTime, endDate: DateTime, nationality: String = "", cursor: String, take: Int): UserSearchResult!
+}
+
+type User {
+  id: ID!
+  email: String!
+  username: String!
+  password: String!
+  salt: String!
+  name: String!
+  phone: String!
+  pictureUrl: String!
+  nationality: String!
+  gender: String!
+  birthdate: DateTime!
+}
+
+type UserSearchResult {
+  users: [User!]!
+  count: Int!
+  cursor: String
+}

@@ -1,7 +1,0 @@
-node_modules/
-src/generated/
-.next/
-.env
-.env.build
-.vercel
-yarn-error.log

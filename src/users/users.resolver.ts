@@ -1,6 +1,6 @@
 import { Args, Query, Resolver } from '@nestjs/graphql';
 import { User } from './models/user.model';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import { UserSearchResult } from './dto/user-search-result.object';
 import { FilteredUsersArgs } from './dto/filtered-users.args';
 import { FindManyUserArgs } from '@prisma/client';
